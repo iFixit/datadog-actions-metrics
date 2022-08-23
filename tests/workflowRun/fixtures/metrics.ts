@@ -202,7 +202,7 @@ export const exampleJobMetrics: v1.Series[] = [
   {
     host: 'github.com',
     metric: 'github.actions.job.queued_duration_second',
-    points: [[1579542279, 0]],
+    points: [[1579542279, -179428]],
     tags: [
       'repository_owner:octocat',
       'repository_name:Hello-World',

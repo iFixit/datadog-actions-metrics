@@ -120,7 +120,7 @@ This action sends the following metrics if enabled.
 - `github.actions.job.duration_second`
   - Time from a job is started to completed
 - `github.actions.job.queued_duration_second`
-  - Time from a job is started until the first step is started
+  - Time from a workflow is started until the first step of this job is started
 
 It has the following tags:
 

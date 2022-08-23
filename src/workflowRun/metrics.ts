@@ -143,7 +143,8 @@ export const computeJobMetrics = (
 
     if (checkRun.steps.nodes.length > 0) {
       const firstStepStartedAt = Math.min(...checkRun.steps.nodes.map((s) => unixTime(s.startedAt)))
-      const queued = firstStepStartedAt - startedAt
+      const workflowRunStartedAt = unixTime(e.workflow_run.run_started_at)
+      const queued = firstStepStartedAt - workflowRunStartedAt
       series.push({
         host: 'github.com',
         tags,
